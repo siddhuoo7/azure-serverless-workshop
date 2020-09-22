@@ -1,12 +1,8 @@
 # Labs: Azure Serverless Workshop
 
-## #1: Create a function app (using Azure CLI)
+## Basic Concepts - Triggers & Bindings
 
-@todo
-
------
-
-## #2: Timer-triggered function app
+### #: Timer-triggered function app
 
 Create & deploy a function app that triggers on the 15th and 45th second of every second minute.
 
@@ -14,7 +10,7 @@ Create & deploy a function app that triggers on the 15th and 45th second of ever
 
 -----
 
-## #3: Http-triggered function app
+### #: Http-triggered function app
 
 Create & deploy a function app that processes a `POST` request as follows:
 
@@ -75,7 +71,7 @@ Create & deploy a function app that processes a `POST` request as follows:
 
 -----
 
-## #4: Data-triggered function app
+### #: Data-triggered function app
 
 Create & deploy a function app that processes blobs uploaded to a storage account's container.
 
@@ -83,7 +79,7 @@ Create & deploy a function app that processes blobs uploaded to a storage accoun
 
 -----
 
-## #5: Output binding
+### #: Output binding
 
 Create & deploy a function app that create a new blob (in a storage account's container) every minute.
 
@@ -91,10 +87,67 @@ Create & deploy a function app that create a new blob (in a storage account's co
 
 -----
 
-## #6: Runtime binding
+### #: Runtime binding
 
 Same example as above, but output blob names should be in the format: `yyyy-MM-dd-HH-mm-ss.txt`
 
 [[SOLUTION]](../code-samples/function-app-mixed/BlobRuntimeBindingFunction.cs)
+
+-----
+
+## Deployment
+
+### #: Create a function app (using Azure CLI)
+
+* First create a resource group.
+
+    ```bash
+    az group create --name <resource-group-name> --location eastus2
+    ```
+
+* Next, create an Azure storage account within the resource group
+
+    ```bash
+    az storage account create \
+    --name <storage-account-name> \
+    --location eastus2 \
+    --resource-group azsrvwkrg2 \
+    --sku Standard_LRS
+    ```
+
+* Finally, create the function app inside the resource group
+
+    ```bash
+    az functionapp create \
+    --name <function-app-name> \
+    --storage-account <storage-account-name> \
+    --consumption-plan-location eastus2 \
+    --resource-group <resource-group-name> \
+    --os-type linux --runtime dotnet --functions-version 3
+    ```
+
+-----
+
+### #: Deploy a function app (using Azure functions core tools)
+
+* Create an Azure function app (linux) using steps in lab above
+
+* Create a .Net Core 3.1 Timer-triggered function as follows
+
+    ```bash
+    mkdir <your-app-name> && cd <your-app-name>
+
+    func init --worker-runtime dotnet
+
+    func new -l C# -n TimerTriggerDemo -t TimerTrigger
+    ```
+
+* Modify the timer-trigger CRON expression as needed
+
+* Finally, deploy the app
+
+    ```bash
+    func azure functionapp publish <function-app-name>
+    ```
 
 -----
