@@ -111,7 +111,7 @@ Same example as above, but output blob names should be in the format: `yyyy-MM-d
     az storage account create \
     --name <storage-account-name> \
     --location eastus2 \
-    --resource-group azsrvwkrg2 \
+    --resource-group <resource-group-name> \
     --sku Standard_LRS
     ```
 
@@ -151,3 +151,58 @@ Same example as above, but output blob names should be in the format: `yyyy-MM-d
     ```
 
 -----
+
+### #: Deploy a function app (using Azure DevOps Pipeline)
+
+* Create a service principal in Azure AD (via Azure Portal).
+
+* Add the service principal to `contributor` role.
+
+* Create a service connection in Azure DevOps using above service principal.
+
+* Create a function app (using steps from lab above) and checkin to Azure Repos.
+
+* Create a new YAML build pipeline via Azure DevOps portal.
+
+* Add `dotnet build` task.
+
+* Add `dotnet publish` task (ensure that `publishWebProjects` is set to false and `**/*.csproj` is specified as project path).
+
+* Add `azure functions` task for deployment of above published package.
+
+-----
+
+## Monitoring
+
+### #: KQL Query
+
+Extract the top 20 most time-consuming function app executions in the last 4 hours.
+
+```bash
+requests
+| where timestamp > ago(30d)
+| where cloud_RoleName =~ '<@replace-function-app-name>' and operation_Name =~ '<@replace-function-name>'
+| order by timestamp desc
+| take 20
+```
+
+-----
+
+### #: KQL Query (with nested properties)
+
+Same query as above but using execution time reported in customDimension property.
+
+```bash
+requests
+| where timestamp > ago(30d)
+| where cloud_RoleName =~ '<@replace-function-app-name>' and operation_Name =~ '<@replace-function-name>'
+| project actualTime=todouble(customDimensions.FunctionExecutionTimeMs), cloud_RoleName, cloud_RoleInstance
+| order by actualTime desc
+| take 20
+```
+
+-----
+
+### #: Metric-based Alerts
+
+Create a metrics-based alert to email you when total blobs in a storage account exceed (say) 5.
