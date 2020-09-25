@@ -6,7 +6,7 @@
 
 Create & deploy a function app that triggers on the 15th and 45th second of every second minute.
 
-[[SOLUTION]](../code-samples/function-app-timer-trigger/TimerTriggerFunction.cs)
+[[SOLUTION]](./code-samples/function-app-timer-trigger/TimerTriggerFunction.cs)
 
 -----
 
@@ -67,7 +67,7 @@ Create & deploy a function app that processes a `POST` request as follows:
     }
     ```
 
-[[SOLUTION]](../code-samples/function-app-http-trigger/HttpTriggerFunctionAdv.cs)
+[[SOLUTION]](./code-samples/function-app-http-trigger/HttpTriggerFunctionAdv.cs)
 
 -----
 
@@ -75,7 +75,7 @@ Create & deploy a function app that processes a `POST` request as follows:
 
 Create & deploy a function app that processes blobs uploaded to a storage account's container.
 
-[[SOLUTION]](../code-samples/function-app-blob-trigger/BlobTriggerFunction.cs)
+[[SOLUTION]](./code-samples/function-app-blob-trigger/BlobTriggerFunction.cs)
 
 -----
 
@@ -83,7 +83,7 @@ Create & deploy a function app that processes blobs uploaded to a storage accoun
 
 @todo
 
-[[SOLUTION]](../code-samples/function-app-blob-trigger/BlobTriggerBindingExpression.cs)
+[[SOLUTION]](./code-samples/function-app-blob-trigger/BlobTriggerBindingExpression.cs)
 
 -----
 
@@ -97,7 +97,7 @@ Create & deploy a function app that processes blobs uploaded to a storage accoun
 
 Create & deploy a function app that create a new blob (in a storage account's container) every minute.
 
-[[SOLUTION]](../code-samples/function-app-mixed/BlobOutputFunction.cs)
+[[SOLUTION]](./code-samples/function-app-mixed/BlobOutputFunction.cs)
 
 -----
 
@@ -105,7 +105,7 @@ Create & deploy a function app that create a new blob (in a storage account's co
 
 @todo
 
-[[SOLUTION]](../code-samples/function-app-blob-output/BlobOutputBindingExpressionFunction.cs)
+[[SOLUTION]](./code-samples/function-app-blob-output/BlobOutputBindingExpressionFunction.cs)
 
 -----
 
@@ -113,7 +113,7 @@ Create & deploy a function app that create a new blob (in a storage account's co
 
 @todo
 
-[[SOLUTION]](../code-samples/function-app-blob-images/ImageFunctions.cs)
+[[SOLUTION]](./code-samples/function-app-blob-images/ImageFunctions.cs)
 
 -----
 
@@ -127,7 +127,7 @@ Create & deploy a function app that create a new blob (in a storage account's co
 
 Same example as above, but output blob names should be in the format: `yyyy-MM-dd-HH-mm-ss.txt`
 
-[[SOLUTION]](../code-samples/function-app-blob-output/BlobOutputRuntimeBinderFunction.cs)
+[[SOLUTION]](./code-samples/function-app-blob-output/BlobOutputRuntimeBinderFunction.cs)
 
 -----
 
