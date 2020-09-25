@@ -101,19 +101,19 @@ Create & deploy a function app that create a new blob (in a storage account's co
 
 -----
 
-### #: Output binding (binding expressions)
-
-@todo
-
-[[SOLUTION]](./code-samples/function-app-blob-output/BlobOutputBindingExpressionFunction.cs)
-
------
-
 ### #: Output binding (multiple outputs)
 
 @todo
 
 [[SOLUTION]](./code-samples/function-app-blob-images/ImageFunctions.cs)
+
+-----
+
+### #: Output binding (binding expressions)
+
+@todo
+
+[[SOLUTION]](./code-samples/function-app-blob-output/BlobOutputBindingExpressionFunction.cs)
 
 -----
 
@@ -125,7 +125,7 @@ Create & deploy a function app that create a new blob (in a storage account's co
 
 ### #: Output binding (runtime binder)
 
-Same example as above, but output blob names should be in the format: `yyyy-MM-dd-HH-mm-ss.txt`
+Create & deploy a function app that create a new blob (in a storage account's container) every minute. Output blob names should be in the format: `yyyy-MM-dd-HH-mm-ss.txt`
 
 [[SOLUTION]](./code-samples/function-app-blob-output/BlobOutputRuntimeBinderFunction.cs)
 
