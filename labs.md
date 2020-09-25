@@ -149,15 +149,7 @@ Create a console app which receives/dequeues messages from above service bus que
 
 -----
 
-### #13: ServiceBus queue-triggered function
-
-Create and deploy a function which uses a service bus queue trigger for receiving/processing messages.
-
-[[SOLUTION]](./code-samples/function-app-servicebus-trigger/ServiceBusQueueTriggerFunction.cs)
-
------
-
-### #14: Publishing to service bus topic
+### #13: Publishing to service bus topic
 
 Create a console app which posts messages (text) to a service bus topic.
 
@@ -165,11 +157,19 @@ Create a console app which posts messages (text) to a service bus topic.
 
 -----
 
-### #15: Subscribing to service bus topics
+### #14: Subscribing to service bus topics
 
 Create a console app which receives/dequeues messages from above service bus topic.
 
 [[SOLUTION]](./code-samples/servicebus-topic-receive/program.cs)
+
+-----
+
+### #15: ServiceBus queue-triggered function
+
+Create and deploy a function which uses a service bus queue trigger for receiving/processing messages.
+
+[[SOLUTION]](./code-samples/function-app-servicebus-trigger/ServiceBusQueueTriggerFunction.cs)
 
 -----
 
@@ -178,6 +178,20 @@ Create a console app which receives/dequeues messages from above service bus top
 Create and deploy a function which uses service bus topic + subscription for receiving messages.
 
 [[SOLUTION]](./code-samples/function-app-servicebus-trigger/ServiceBusSubscriptionTriggerFunction.cs)
+
+-----
+
+### #17: ServiceBus output binding (to queue)
+
+Create and deploy a function which writes a message to a service bus queue every 30 seconds.
+
+[[SOLUTION]](./code-samples/function-app-servicebus-output/ServiceBusQueueOutputFunction.cs)
+
+-----
+
+### #18: [HomeWork] ServiceBus output binding (to topic)
+
+Create and deploy a function which writes a message to a service bus topic every 30 seconds.
 
 -----
 
