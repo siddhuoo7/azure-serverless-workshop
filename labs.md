@@ -103,7 +103,7 @@ Create & deploy a function app that create a new blob (in a storage account's co
 
 ### #: Output binding (multiple outputs)
 
-@todo
+Multiple output blobs created from the same function app.
 
 [[SOLUTION]](./code-samples/function-app-blob-images/ImageFunctions.cs)
 
@@ -111,7 +111,7 @@ Create & deploy a function app that create a new blob (in a storage account's co
 
 ### #: Output binding (binding expressions)
 
-@todo
+Similar to above examples, but output blob names must be timestamped or stamped with random guids.
 
 [[SOLUTION]](./code-samples/function-app-blob-output/BlobOutputBindingExpressionFunction.cs)
 
