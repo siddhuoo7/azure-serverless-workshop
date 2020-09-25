@@ -2,7 +2,7 @@
 
 ## Basic Concepts - Triggers & Bindings
 
-### #: Timer-triggered function app
+### #1: Timer-triggered function app
 
 Create & deploy a function app that triggers on the 15th and 45th second of every second minute.
 
@@ -10,7 +10,7 @@ Create & deploy a function app that triggers on the 15th and 45th second of ever
 
 -----
 
-### #: Http-triggered function app
+### #2: Http-triggered function app
 
 Create & deploy a function app that processes a `POST` request as follows:
 
@@ -71,7 +71,7 @@ Create & deploy a function app that processes a `POST` request as follows:
 
 -----
 
-### #: Data-triggered function app
+### #3: Data-triggered function app
 
 Create & deploy a function app that processes blobs uploaded to a storage account's container.
 
@@ -79,7 +79,7 @@ Create & deploy a function app that processes blobs uploaded to a storage accoun
 
 -----
 
-### #: Data-triggered function app (binding expressions)
+### #4: Data-triggered function app (binding expressions)
 
 @todo
 
@@ -87,13 +87,13 @@ Create & deploy a function app that processes blobs uploaded to a storage accoun
 
 -----
 
-## #: Input binding
+### #5: Input binding
 
 @todo
 
 -----
 
-### #: Output binding
+### #6: Output binding
 
 Create & deploy a function app that create a new blob (in a storage account's container) every minute.
 
@@ -101,7 +101,7 @@ Create & deploy a function app that create a new blob (in a storage account's co
 
 -----
 
-### #: Output binding (multiple outputs)
+### #7: Output binding (multiple outputs)
 
 Multiple output blobs created from the same function app.
 
@@ -109,7 +109,7 @@ Multiple output blobs created from the same function app.
 
 -----
 
-### #: Output binding (binding expressions)
+### #8: Output binding (binding expressions)
 
 Similar to above examples, but output blob names must be timestamped or stamped with random guids.
 
@@ -117,13 +117,13 @@ Similar to above examples, but output blob names must be timestamped or stamped 
 
 -----
 
-### #: Output binding (multiple outputs with ICollector)
+### #9: Output binding (multiple outputs with ICollector)
 
 @todo
 
 -----
 
-### #: Output binding (runtime binder)
+### #10: Output binding (runtime binder)
 
 Create & deploy a function app that create a new blob (in a storage account's container) every minute. Output blob names should be in the format: `yyyy-MM-dd-HH-mm-ss.txt`
 
