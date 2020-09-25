@@ -6,7 +6,7 @@
 
 Create & deploy a function app that triggers on the 15th and 45th second of every second minute.
 
-[[SOLUTION]](../code-samples/function-app-mixed/TimerTriggerFunction.cs)
+[[SOLUTION]](../code-samples/function-app-timer-trigger/TimerTriggerFunction.cs)
 
 -----
 
@@ -67,7 +67,7 @@ Create & deploy a function app that processes a `POST` request as follows:
     }
     ```
 
-[[SOLUTION]](../code-samples/function-app-mixed/HttpTriggerFunctionAdv.cs)
+[[SOLUTION]](../code-samples/function-app-http-trigger/HttpTriggerFunctionAdv.cs)
 
 -----
 
@@ -75,7 +75,21 @@ Create & deploy a function app that processes a `POST` request as follows:
 
 Create & deploy a function app that processes blobs uploaded to a storage account's container.
 
-[[SOLUTION]](../code-samples/function-app-mixed/BlobTriggerFunction.cs)
+[[SOLUTION]](../code-samples/function-app-blob-trigger/BlobTriggerFunction.cs)
+
+-----
+
+### #: Data-triggered function app (binding expressions)
+
+@todo
+
+[[SOLUTION]](../code-samples/function-app-blob-trigger/BlobTriggerBindingExpression.cs)
+
+-----
+
+## #: Input binding
+
+@todo
 
 -----
 
@@ -87,11 +101,33 @@ Create & deploy a function app that create a new blob (in a storage account's co
 
 -----
 
-### #: Runtime binding
+### #: Output binding (binding expressions)
+
+@todo
+
+[[SOLUTION]](../code-samples/function-app-blob-output/BlobOutputBindingExpressionFunction.cs)
+
+-----
+
+### #: Output binding (multiple outputs)
+
+@todo
+
+[[SOLUTION]](../code-samples/function-app-blob-images/ImageFunctions.cs)
+
+-----
+
+### #: Output binding (multiple outputs with ICollector)
+
+@todo
+
+-----
+
+### #: Output binding (runtime binder)
 
 Same example as above, but output blob names should be in the format: `yyyy-MM-dd-HH-mm-ss.txt`
 
-[[SOLUTION]](../code-samples/function-app-mixed/BlobRuntimeBindingFunction.cs)
+[[SOLUTION]](../code-samples/function-app-blob-output/BlobOutputRuntimeBinderFunction.cs)
 
 -----
 
@@ -206,3 +242,29 @@ requests
 ### #: Metric-based Alerts
 
 Create a metrics-based alert to email you when total blobs in a storage account exceed (say) 5.
+
+-----
+
+## Logic Apps
+
+-----
+
+## Durable Functions
+
+### #: Chaining example
+
+-----
+
+### #: Fan-in / fan-out example
+
+-----
+
+### #: Long-running HTTP request
+
+-----
+
+## Unit Testing
+
+### #: @todo
+
+-----
