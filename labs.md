@@ -83,7 +83,7 @@ Create & deploy a function app that processes blobs uploaded to a storage accoun
 
 @todo
 
-[[SOLUTION]](./code-samples/function-app-blob-trigger/BlobTriggerBindingExpression.cs)
+[[SOLUTION]](./code-samples/function-app-blob-trigger/BlobTriggerBindingExpressionFunction.cs)
 
 -----
 
@@ -97,7 +97,7 @@ Create & deploy a function app that processes blobs uploaded to a storage accoun
 
 Create & deploy a function app that create a new blob (in a storage account's container) every minute.
 
-[[SOLUTION]](./code-samples/function-app-mixed/BlobOutputFunction.cs)
+[[SOLUTION]](./code-samples/function-app-blob-output/BlobOutputFunction.cs)
 
 -----
 
