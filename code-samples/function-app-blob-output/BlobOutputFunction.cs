@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 
 namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApps
 {
-    public static class BlobOutputBindingExpressionFunction
+    public static class BlobOutputFunction
     {
         [FunctionName("BlobOutputFunction")]
         public static void Run(
