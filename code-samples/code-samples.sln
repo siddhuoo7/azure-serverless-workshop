@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "function-app-cosmosdb-input
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "function-app-cosmosdb-output", "function-app-cosmosdb-output\function-app-cosmosdb-output.csproj", "{94A36579-F423-4351-B096-DD3A865B3A32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "function-app-keyvault-demo", "function-app-keyvault-demo\function-app-keyvault-demo.csproj", "{E5F9F128-4637-4754-8EB6-793E7E25CBDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -310,5 +312,17 @@ Global
 		{94A36579-F423-4351-B096-DD3A865B3A32}.Release|x64.Build.0 = Release|Any CPU
 		{94A36579-F423-4351-B096-DD3A865B3A32}.Release|x86.ActiveCfg = Release|Any CPU
 		{94A36579-F423-4351-B096-DD3A865B3A32}.Release|x86.Build.0 = Release|Any CPU
+		{E5F9F128-4637-4754-8EB6-793E7E25CBDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F9F128-4637-4754-8EB6-793E7E25CBDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F9F128-4637-4754-8EB6-793E7E25CBDA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E5F9F128-4637-4754-8EB6-793E7E25CBDA}.Debug|x64.Build.0 = Debug|Any CPU
+		{E5F9F128-4637-4754-8EB6-793E7E25CBDA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E5F9F128-4637-4754-8EB6-793E7E25CBDA}.Debug|x86.Build.0 = Debug|Any CPU
+		{E5F9F128-4637-4754-8EB6-793E7E25CBDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F9F128-4637-4754-8EB6-793E7E25CBDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5F9F128-4637-4754-8EB6-793E7E25CBDA}.Release|x64.ActiveCfg = Release|Any CPU
+		{E5F9F128-4637-4754-8EB6-793E7E25CBDA}.Release|x64.Build.0 = Release|Any CPU
+		{E5F9F128-4637-4754-8EB6-793E7E25CBDA}.Release|x86.ActiveCfg = Release|Any CPU
+		{E5F9F128-4637-4754-8EB6-793E7E25CBDA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

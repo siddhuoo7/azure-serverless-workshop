@@ -31,7 +31,7 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApps
 
             builder.ConfigurationBuilder
                 .AddAzureKeyVault(
-                    "https://mithunkv12345.vault.azure.net/",
+                    "https://mithunkv12345.vault.azure.net/", // replace later as needed
                     keyVaultClient,
                     new DefaultKeyVaultSecretManager());
         }
