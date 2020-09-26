@@ -20,15 +20,13 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApps
         }
 
         [FunctionName("TimerTriggerCSharp")]
-        public async Task Run([TimerTrigger("0 */1 * * * *")] TimerInfo myTimer, ILogger log)
+        public void Run([TimerTrigger("0 */1 * * * *")] TimerInfo myTimer, ILogger log)
         {
             // var content = await this._client.GetStringAsync("https://www.cnn.com");
             // log.LogInformation(content);
 
             var val = this._configuration["mysecret1"];
             log.LogInformation($"mysecret1: {this._configuration["mysecret1"]}");
-
-
         }
     }
 }
