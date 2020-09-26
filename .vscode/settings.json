@@ -1,8 +1,8 @@
 {
-    "azureFunctions.deploySubpath": "code-samples/function-app-cosmosdb-trigger/bin/Release/netcoreapp3.1/publish",
+    "azureFunctions.deploySubpath": "code-samples/function-app-cosmosdb-output/bin/Release/netcoreapp3.1/publish",
     "azureFunctions.projectLanguage": "C#",
     "azureFunctions.projectRuntime": "~3",
     "debug.internalConsoleOptions": "neverOpen",
-    "azureFunctions.projectSubpath": "code-samples/function-app-cosmosdb-trigger",
+    "azureFunctions.projectSubpath": "code-samples/function-app-cosmosdb-output",
     "azureFunctions.preDeployTask": "publish"
 }

@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "function-app-cosmosdb-trigg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "function-app-cosmosdb-input", "function-app-cosmosdb-input\function-app-cosmosdb-input.csproj", "{24577B60-5EEE-4438-BED3-F06056CA4A44}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "function-app-cosmosdb-output", "function-app-cosmosdb-output\function-app-cosmosdb-output.csproj", "{94A36579-F423-4351-B096-DD3A865B3A32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -296,5 +298,17 @@ Global
 		{24577B60-5EEE-4438-BED3-F06056CA4A44}.Release|x64.Build.0 = Release|Any CPU
 		{24577B60-5EEE-4438-BED3-F06056CA4A44}.Release|x86.ActiveCfg = Release|Any CPU
 		{24577B60-5EEE-4438-BED3-F06056CA4A44}.Release|x86.Build.0 = Release|Any CPU
+		{94A36579-F423-4351-B096-DD3A865B3A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94A36579-F423-4351-B096-DD3A865B3A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94A36579-F423-4351-B096-DD3A865B3A32}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{94A36579-F423-4351-B096-DD3A865B3A32}.Debug|x64.Build.0 = Debug|Any CPU
+		{94A36579-F423-4351-B096-DD3A865B3A32}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{94A36579-F423-4351-B096-DD3A865B3A32}.Debug|x86.Build.0 = Debug|Any CPU
+		{94A36579-F423-4351-B096-DD3A865B3A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94A36579-F423-4351-B096-DD3A865B3A32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94A36579-F423-4351-B096-DD3A865B3A32}.Release|x64.ActiveCfg = Release|Any CPU
+		{94A36579-F423-4351-B096-DD3A865B3A32}.Release|x64.Build.0 = Release|Any CPU
+		{94A36579-F423-4351-B096-DD3A865B3A32}.Release|x86.ActiveCfg = Release|Any CPU
+		{94A36579-F423-4351-B096-DD3A865B3A32}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
