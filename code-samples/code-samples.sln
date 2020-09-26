@@ -21,8 +21,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "function-app-http-trigger",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "function-app-timer-trigger", "function-app-timer-trigger\function-app-timer-trigger.csproj", "{6F966837-5685-473B-9D1F-93E452E764D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "function-app-servicebus-trigger", "function-app-servicebus-trigger\function-app-servicebus-trigger.csproj", "{2584BB8E-43B8-4870-AEAF-5D642D030475}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "servicebus-queue-send", "servicebus-queue-send\servicebus-queue-send.csproj", "{336711BA-7FF0-4E75-833A-46D8A359D790}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "servicebus-queue-receive", "servicebus-queue-receive\servicebus-queue-receive.csproj", "{CADF9FA0-7175-4119-B9CF-4F6D6F8DE9DC}"
@@ -42,6 +40,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "function-app-servicebus-trigger", "function-app-servicebus-output\function-app-servicebus-trigger.csproj", "{AC6C3F00-B21D-49A8-AC38-66DC1CF6E270}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "function-app-cosmosdb-trigger", "function-app-cosmosdb-trigger\function-app-cosmosdb-trigger.csproj", "{F532E9BA-FDC5-4644-9389-D8B50A59D0C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "function-app-cosmosdb-input", "function-app-cosmosdb-input\function-app-cosmosdb-input.csproj", "{24577B60-5EEE-4438-BED3-F06056CA4A44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -164,18 +164,6 @@ Global
 		{6F966837-5685-473B-9D1F-93E452E764D1}.Release|x64.Build.0 = Release|Any CPU
 		{6F966837-5685-473B-9D1F-93E452E764D1}.Release|x86.ActiveCfg = Release|Any CPU
 		{6F966837-5685-473B-9D1F-93E452E764D1}.Release|x86.Build.0 = Release|Any CPU
-		{2584BB8E-43B8-4870-AEAF-5D642D030475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2584BB8E-43B8-4870-AEAF-5D642D030475}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2584BB8E-43B8-4870-AEAF-5D642D030475}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{2584BB8E-43B8-4870-AEAF-5D642D030475}.Debug|x64.Build.0 = Debug|Any CPU
-		{2584BB8E-43B8-4870-AEAF-5D642D030475}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{2584BB8E-43B8-4870-AEAF-5D642D030475}.Debug|x86.Build.0 = Debug|Any CPU
-		{2584BB8E-43B8-4870-AEAF-5D642D030475}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2584BB8E-43B8-4870-AEAF-5D642D030475}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2584BB8E-43B8-4870-AEAF-5D642D030475}.Release|x64.ActiveCfg = Release|Any CPU
-		{2584BB8E-43B8-4870-AEAF-5D642D030475}.Release|x64.Build.0 = Release|Any CPU
-		{2584BB8E-43B8-4870-AEAF-5D642D030475}.Release|x86.ActiveCfg = Release|Any CPU
-		{2584BB8E-43B8-4870-AEAF-5D642D030475}.Release|x86.Build.0 = Release|Any CPU
 		{336711BA-7FF0-4E75-833A-46D8A359D790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{336711BA-7FF0-4E75-833A-46D8A359D790}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{336711BA-7FF0-4E75-833A-46D8A359D790}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -296,5 +284,17 @@ Global
 		{F532E9BA-FDC5-4644-9389-D8B50A59D0C9}.Release|x64.Build.0 = Release|Any CPU
 		{F532E9BA-FDC5-4644-9389-D8B50A59D0C9}.Release|x86.ActiveCfg = Release|Any CPU
 		{F532E9BA-FDC5-4644-9389-D8B50A59D0C9}.Release|x86.Build.0 = Release|Any CPU
+		{24577B60-5EEE-4438-BED3-F06056CA4A44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24577B60-5EEE-4438-BED3-F06056CA4A44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24577B60-5EEE-4438-BED3-F06056CA4A44}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{24577B60-5EEE-4438-BED3-F06056CA4A44}.Debug|x64.Build.0 = Debug|Any CPU
+		{24577B60-5EEE-4438-BED3-F06056CA4A44}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{24577B60-5EEE-4438-BED3-F06056CA4A44}.Debug|x86.Build.0 = Debug|Any CPU
+		{24577B60-5EEE-4438-BED3-F06056CA4A44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24577B60-5EEE-4438-BED3-F06056CA4A44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24577B60-5EEE-4438-BED3-F06056CA4A44}.Release|x64.ActiveCfg = Release|Any CPU
+		{24577B60-5EEE-4438-BED3-F06056CA4A44}.Release|x64.Build.0 = Release|Any CPU
+		{24577B60-5EEE-4438-BED3-F06056CA4A44}.Release|x86.ActiveCfg = Release|Any CPU
+		{24577B60-5EEE-4438-BED3-F06056CA4A44}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
