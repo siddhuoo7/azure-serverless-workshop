@@ -8,24 +8,14 @@ using Newtonsoft.Json;
 
 namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApp
 {
-    public class Contact
+    public static class CosmosDBInputFunctionBindingExpression
     {
-        public string FirstName { get; set; }
-
-        public string LastName { get; set; }
-
-        [JsonProperty("id")]
-        public string Id { get; set; }
-    }
-
-    public static class CosmosDBInputFunction
-    {
-        [FunctionName("CosmosDBInputFunction")]
-        public static void Run(
-            [TimerTrigger("*/30 * * * * *")] TimerInfo myTimer,
+        [FunctionName("CosmosDBInputFunctionBindingExpression")]
+        public static void UseBindingExpression(
+            [BlobTrigger("myblobcontainer1/{blobName}")] string blob, // replace later as appropriate
             [CosmosDB("mydb1", "mycontainer1",
                 ConnectionStringSetting = "AzureWebJobsCosmosDB",
-                SqlQuery = "select * from c")]
+                SqlQuery = "select * from c where c.lastName = {blobName}")] // replace later as appropriate
                 IEnumerable<Contact> contacts,
             ILogger log)
         {
