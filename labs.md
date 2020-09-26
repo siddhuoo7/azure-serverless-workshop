@@ -1,6 +1,6 @@
 # Labs: Azure Serverless Workshop
 
-## Basic Concepts - Triggers & Bindings
+## BASIC CONCEPTS - TRIGGERS & BINDINGS
 
 ### #1: Timer-triggered function app
 
@@ -131,7 +131,7 @@ Create & deploy a function app that create a new blob (in a storage account's co
 
 -----
 
-## Service Bus
+## SERVICE BUS
 
 ### #11: Posting messages to service bus queue
 
@@ -192,6 +192,58 @@ Create and deploy a function which writes a message to a service bus queue every
 ### #18: [HomeWork] ServiceBus output binding (to topic)
 
 Create and deploy a function which writes a message to a service bus topic every 30 seconds.
+
+-----
+
+## COSMOS DB
+
+### #14: Read from and writing to Cosmos DB documents
+
+Create a console app (using .NET Core SDK) that demonstrates simple CRUD actions over Cosmos DB documents.
+
+[solution](./code-samples/cosmos-db-basics/)
+
+-----
+
+### #15: Cosmos DB trigger
+
+[solution](./code-samples/function-app-cosmosdb-trigger/CosmosDBTriggerFunction.cs)
+
+-----
+
+### #16: Cosmos DB trigger (POCO)
+
+[solution](./code-samples/function-app-cosmosdb-trigger/CosmosDBTriggerFunctionAdv.cs)
+
+-----
+
+### #17: Cosmos DB: input binding (sql query)
+
+[solution](./code-samples/function-app-cosmosdb-input/CosmosDBInputFunctionSqlQuery.cs)
+
+-----
+
+### #18: Cosmos DB: input binding (point query)
+
+[solution](./code-samples/function-app-cosmosdb-input/CosmosDBInputFunctionPointQuery.cs)
+
+-----
+
+### #19: Cosmos DB: input binding (binding expression)
+
+[solution](./code-samples/function-app-cosmosdb-input/CosmosDBInputFunctionBindingExpression.cs)
+
+-----
+
+### #20: Cosmos DB: output binding
+
+[solution](./code-samples/function-app-cosmosdb-output/CosmosDBOutputFunctionPointQuery.cs)
+
+-----
+
+### #21: Cosmos DB: output binding (multiple outputs with IAsyncCollector)
+
+[solution](./code-samples/function-app-cosmosdb-output/CosmosDBMultipleOutputFunction.cs)
 
 -----
 
