@@ -1,143 +1,10 @@
-# Labs: Azure Serverless Workshop
-
-## BASIC CONCEPTS - TRIGGERS & BINDINGS
-
-### #1: Timer-triggered function app
-
-Create & deploy a function app that triggers on the 15th and 45th second of every second minute.
-
-[[SOLUTION]](./code-samples/function-app-timer-trigger/TimerTriggerFunction.cs)
-
------
-
-### #2: Http-triggered function app
-
-Create & deploy a function app that processes a `POST` request as follows:
-
-* Accepts a request for weather information of specified city (see format below):
-
-    ```json
-    {
-        "city": "Bangalore"
-    }
-    ```
-
-* Returns weather information for last 7 days for specified city (see format below):
-
-    ```json
-    {
-        "city": "Bangalore",
-        "dailyReport": [
-            {
-                "date": "2020-09-02T00:00:00+05:30",
-                "celciusHigh": 40,
-                "celciusLow": 30
-            },
-            {
-                "date": "2020-09-01T00:00:00+05:30",
-                "celciusHigh": 39,
-                "temperatureLowCelcius": 28
-            },
-            {
-                "date": "2020-08-31T00:00:00+05:30",
-                "celciusHigh": 38,
-                "temperatureLowCelcius": 27
-            },
-            {
-                "date": "2020-08-30T00:00:00+05:30",
-                "celciusHigh": 37,
-                "temperatureLowCelcius": 26
-            },
-            {
-                "date": "2020-08-29T00:00:00+05:30",
-                "celciusHigh": 36,
-                "temperatureLowCelcius": 25
-            },
-            {
-                "date": "2020-08-28T00:00:00+05:30",
-                "celciusHigh": 35,
-                "temperatureLowCelcius": 24
-            },
-            {
-                "date": "2020-08-27T00:00:00+05:30",
-                "celciusHigh": 34,
-                "temperatureLowCelcius": 23
-            }
-        ]
-    }
-    ```
-
-[[SOLUTION]](./code-samples/function-app-http-trigger/HttpTriggerFunctionAdv.cs)
-
------
-
-### #3: Data-triggered function app
-
-Create & deploy a function app that processes blobs uploaded to a storage account's container.
-
-[[SOLUTION]](./code-samples/function-app-blob-trigger/BlobTriggerFunction.cs)
-
------
-
-### #4: Data-triggered function app (binding expressions)
-
-@todo
-
-[[SOLUTION]](./code-samples/function-app-blob-trigger/BlobTriggerBindingExpressionFunction.cs)
-
------
-
-### #5: Input binding
-
-@todo
-
------
-
-### #6: Output binding
-
-Create & deploy a function app that create a new blob (in a storage account's container) every minute.
-
-[[SOLUTION]](./code-samples/function-app-blob-output/BlobOutputFunction.cs)
-
------
-
-### #7: Output binding (multiple outputs)
-
-Multiple output blobs created from the same function app.
-
-[[SOLUTION]](./code-samples/function-app-blob-images/ImageFunctions.cs)
-
------
-
-### #8: Output binding (binding expressions)
-
-Similar to above examples, but output blob names must be timestamped or stamped with random guids.
-
-[[SOLUTION]](./code-samples/function-app-blob-output/BlobOutputBindingExpressionFunction.cs)
-
------
-
-### #9: Output binding (multiple outputs with ICollector)
-
-@todo
-
------
-
-### #10: Output binding (runtime binder)
-
-Create & deploy a function app that create a new blob (in a storage account's container) every minute. Output blob names should be in the format: `yyyy-MM-dd-HH-mm-ss.txt`
-
-[[SOLUTION]](./code-samples/function-app-blob-output/BlobOutputRuntimeBinderFunction.cs)
-
------
-
 ## SERVICE BUS
 
 ### #11: Posting messages to service bus queue
 
 Create a console app which posts messages (text) to a service bus queue.
 
-[[SOLUTION]](./code-samples/servicebus-queue-send/program.cs)
+[[SOLUTION]](../code-samples/servicebus-queue-send/program.cs)
 
 -----
 
@@ -145,7 +12,7 @@ Create a console app which posts messages (text) to a service bus queue.
 
 Create a console app which receives/dequeues messages from above service bus queue.
 
-[[SOLUTION]](./code-samples/servicebus-queue-receive/program.cs)
+[[SOLUTION]](../code-samples/servicebus-queue-receive/program.cs)
 
 -----
 
@@ -153,7 +20,7 @@ Create a console app which receives/dequeues messages from above service bus que
 
 Create a console app which posts messages (text) to a service bus topic.
 
-[[SOLUTION]](./code-samples/servicebus-topic-send/program.cs)
+[[SOLUTION]](../code-samples/servicebus-topic-send/program.cs)
 
 -----
 
@@ -161,7 +28,7 @@ Create a console app which posts messages (text) to a service bus topic.
 
 Create a console app which receives/dequeues messages from above service bus topic.
 
-[[SOLUTION]](./code-samples/servicebus-topic-receive/program.cs)
+[[SOLUTION]](../code-samples/servicebus-topic-receive/program.cs)
 
 -----
 
@@ -169,7 +36,7 @@ Create a console app which receives/dequeues messages from above service bus top
 
 Create and deploy a function which uses a service bus queue trigger for receiving/processing messages.
 
-[[SOLUTION]](./code-samples/function-app-servicebus-trigger/ServiceBusQueueTriggerFunction.cs)
+[[SOLUTION]](../code-samples/function-app-servicebus-trigger/ServiceBusQueueTriggerFunction.cs)
 
 -----
 
@@ -177,7 +44,7 @@ Create and deploy a function which uses a service bus queue trigger for receivin
 
 Create and deploy a function which uses service bus topic + subscription for receiving messages.
 
-[[SOLUTION]](./code-samples/function-app-servicebus-trigger/ServiceBusSubscriptionTriggerFunction.cs)
+[[SOLUTION]](../code-samples/function-app-servicebus-trigger/ServiceBusSubscriptionTriggerFunction.cs)
 
 -----
 
@@ -185,7 +52,7 @@ Create and deploy a function which uses service bus topic + subscription for rec
 
 Create and deploy a function which writes a message to a service bus queue every 30 seconds.
 
-[[SOLUTION]](./code-samples/function-app-servicebus-output/ServiceBusQueueOutputFunction.cs)
+[[SOLUTION]](../code-samples/function-app-servicebus-output/ServiceBusQueueOutputFunction.cs)
 
 -----
 
@@ -201,49 +68,49 @@ Create and deploy a function which writes a message to a service bus topic every
 
 Create a console app (using .NET Core SDK) that demonstrates simple CRUD actions over Cosmos DB documents.
 
-[solution](./code-samples/cosmos-db-basics/)
+[solution](../code-samples/cosmos-db-basics/)
 
 -----
 
 ### #15: Cosmos DB trigger
 
-[solution](./code-samples/function-app-cosmosdb-trigger/CosmosDBTriggerFunction.cs)
+[solution](../code-samples/function-app-cosmosdb-trigger/CosmosDBTriggerFunction.cs)
 
 -----
 
 ### #16: Cosmos DB trigger (POCO)
 
-[solution](./code-samples/function-app-cosmosdb-trigger/CosmosDBTriggerFunctionAdv.cs)
+[solution](../code-samples/function-app-cosmosdb-trigger/CosmosDBTriggerFunctionAdv.cs)
 
 -----
 
 ### #17: Cosmos DB: input binding (sql query)
 
-[solution](./code-samples/function-app-cosmosdb-input/CosmosDBInputFunctionSqlQuery.cs)
+[solution](../code-samples/function-app-cosmosdb-input/CosmosDBInputFunctionSqlQuery.cs)
 
 -----
 
 ### #18: Cosmos DB: input binding (point query)
 
-[solution](./code-samples/function-app-cosmosdb-input/CosmosDBInputFunctionPointQuery.cs)
+[solution](../code-samples/function-app-cosmosdb-input/CosmosDBInputFunctionPointQuery.cs)
 
 -----
 
 ### #19: Cosmos DB: input binding (binding expression)
 
-[solution](./code-samples/function-app-cosmosdb-input/CosmosDBInputFunctionBindingExpression.cs)
+[solution](../code-samples/function-app-cosmosdb-input/CosmosDBInputFunctionBindingExpression.cs)
 
 -----
 
 ### #20: Cosmos DB: output binding
 
-[solution](./code-samples/function-app-cosmosdb-output/CosmosDBOutputFunctionPointQuery.cs)
+[solution](../code-samples/function-app-cosmosdb-output/CosmosDBOutputFunctionPointQuery.cs)
 
 -----
 
 ### #21: Cosmos DB: output binding (multiple outputs with IAsyncCollector)
 
-[solution](./code-samples/function-app-cosmosdb-output/CosmosDBMultipleOutputFunction.cs)
+[solution](../code-samples/function-app-cosmosdb-output/CosmosDBMultipleOutputFunction.cs)
 
 -----
 

@@ -2,7 +2,7 @@
 
 ## [Start Here](https://github.com/mithunshanbhag/azure-serverless-workshop/projects/1)
 
-* [Contents](https://github.com/mithunshanbhag/azure-serverless-workshop/projects/1) | [Labs](./labs.md) ([prerequisites](./lab-prerequisites.md) | [solutions](./code-samples))
+* [Contents](https://github.com/mithunshanbhag/azure-serverless-workshop/projects/1) | [Labs](./labs) ([prerequisites](./lab-prerequisites.md) | [solutions](./code-samples))
 
 ## Notes
 
