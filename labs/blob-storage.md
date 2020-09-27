@@ -10,15 +10,13 @@ Create & deploy a function app that processes blobs uploaded to a storage accoun
 
 ## #2: Data-triggered function app (binding expressions)
 
-@todo
-
 [[SOLUTION]](../code-samples/function-app-blob-trigger/BlobTriggerBindingExpressionFunction.cs)
 
 -----
 
-## #3: Input binding
+## #3: [HomeWork] Input binding
 
-@todo
+Create & deploy a function app that reads from an existing blob (in a storage account's container) every minute.
 
 -----
 
@@ -46,13 +44,7 @@ Similar to above examples, but output blob names must be timestamped or stamped 
 
 -----
 
-## #7: Output binding (multiple outputs with ICollector)
-
-@todo
-
------
-
-## #8: Output binding (runtime binder)
+## #7: Output binding (runtime binder)
 
 Create & deploy a function app that create a new blob (in a storage account's container) every minute. Output blob names should be in the format: `yyyy-MM-dd-HH-mm-ss.txt`
 
