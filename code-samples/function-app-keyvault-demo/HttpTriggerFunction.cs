@@ -10,18 +10,19 @@ using Newtonsoft.Json;
 
 namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApps
 {
-    public static class HttpTriggerCSharp1
+    public static class HttpTriggerFunction
     {
-        [FunctionName("HttpTriggerCSharp1")]
+        [FunctionName("HttpTriggerFunction")]
         public static IActionResult Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
             ILogger log)
         {
             // note the app setting key must be of the format: @Microsoft.KeyVault(SecretUri=@replace-with-secret-uri)
-            var val = Environment.GetEnvironmentVariable("@replace-with-app-setting", EnvironmentVariableTarget.Process);
+            var secretName = "@replace-with-app-setting";
+            var secretValue = Environment.GetEnvironmentVariable(secretName, EnvironmentVariableTarget.Process);
 
-            log.LogInformation($"The value is {val}.");
-            return new OkObjectResult(val);
+            log.LogInformation($"The value of the key vault secret `{secretName}` is `{secretValue ?? "undefined"}`");
+            return new OkObjectResult(secretValue);
         }
     }
 }
