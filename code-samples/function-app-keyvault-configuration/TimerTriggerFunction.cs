@@ -8,18 +8,16 @@ using Microsoft.Extensions.Logging;
 
 namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApps
 {
-    public class TimerTriggerCSharp
+    public class TimerTriggerFunction
     {
-        private readonly HttpClient _client;
         private readonly IConfiguration _configuration;
 
-        public TimerTriggerCSharp(HttpClient client, IConfiguration config)
+        public TimerTriggerFunction(IConfiguration config)
         {
-            this._client = client;
             this._configuration = config;
         }
 
-        [FunctionName("TimerTriggerCSharp")]
+        [FunctionName("TimerTriggerFunction")]
         public void Run([TimerTrigger("0 */1 * * * *")] TimerInfo myTimer, ILogger log)
         {
             // var content = await this._client.GetStringAsync("https://www.cnn.com");

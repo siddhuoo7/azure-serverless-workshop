@@ -14,11 +14,11 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApps
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            builder.Services.AddHttpClient();
+        //     builder.Services.AddHttpClient();
 
-            // builder.Services.AddSingleton<IMyService>((s) => {
-            //     return new MyService();
-            // });
+        //     // builder.Services.AddSingleton<IMyService>((s) => {
+        //     //     return new MyService();
+        //     // });
         }
 
         public override void ConfigureAppConfiguration(IFunctionsConfigurationBuilder builder)
