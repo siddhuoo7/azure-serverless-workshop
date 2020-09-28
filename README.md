@@ -8,3 +8,4 @@
 
 * This page can be accessed from [http://bit.ly/azsrvwk](http://bit.ly/azsrvwk).
 * In case of any issues, please file a [github issue here](https://github.com/mithunshanbhag/azure-serverless-workshop/issues) or email me (mithun@cloudskew.com).
+
