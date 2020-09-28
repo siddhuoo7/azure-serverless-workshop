@@ -68,3 +68,7 @@ Create & deploy a function app that processes a `POST` request as follows:
 [[SOLUTION]](../code-samples/function-app-http-trigger/HttpTriggerFunctionAdv.cs)
 
 -----
+
+## #3: Http-triggered function app (binding to route constraints)
+
+[[SOLUTION]](../code-samples/function-app-http-trigger/HttpTriggerBindingExpressionFunction.cs)
