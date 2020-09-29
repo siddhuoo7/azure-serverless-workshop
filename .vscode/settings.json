@@ -3,6 +3,5 @@
     "azureFunctions.projectLanguage": "C#",
     "azureFunctions.projectRuntime": "~3",
     "debug.internalConsoleOptions": "neverOpen",
-    "azureFunctions.projectSubpath": "code-samples/function-app-cosmosdb-output",
     "azureFunctions.preDeployTask": "publish"
 }
