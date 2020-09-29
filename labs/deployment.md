@@ -1,7 +1,6 @@
+# DEPLOYMENT
 
-## Deployment
-
-### #: Create a function app (using Azure CLI)
+## #: Create a function app (using Azure CLI)
 
 * First create a resource group.
 
@@ -32,7 +31,7 @@
 
 -----
 
-### #: Deploy a function app (using Azure functions core tools)
+## #: Deploy a function app (using Azure functions core tools)
 
 * Create an Azure function app (linux) using steps in lab above
 
@@ -56,7 +55,7 @@
 
 -----
 
-### #: Deploy a function app (using Azure DevOps Pipeline)
+## #: Deploy a function app (using Azure DevOps Pipeline)
 
 * Create a service principal in Azure AD (via Azure Portal).
 
@@ -73,66 +72,5 @@
 * Add `dotnet publish` task (ensure that `publishWebProjects` is set to false and `**/*.csproj` is specified as project path).
 
 * Add `azure functions` task for deployment of above published package.
-
------
-
-## Monitoring
-
-### #: KQL Query
-
-Extract the top 20 most time-consuming function app executions in the last 4 hours.
-
-```bash
-requests
-| where timestamp > ago(30d)
-| where cloud_RoleName =~ '<@replace-function-app-name>' and operation_Name =~ '<@replace-function-name>'
-| order by timestamp desc
-| take 20
-```
-
------
-
-### #: KQL Query (with nested properties)
-
-Same query as above but using execution time reported in customDimension property.
-
-```bash
-requests
-| where timestamp > ago(30d)
-| where cloud_RoleName =~ '<@replace-function-app-name>' and operation_Name =~ '<@replace-function-name>'
-| project actualTime=todouble(customDimensions.FunctionExecutionTimeMs), cloud_RoleName, cloud_RoleInstance
-| order by actualTime desc
-| take 20
-```
-
------
-
-### #: Metric-based Alerts
-
-Create a metrics-based alert to email you when total blobs in a storage account exceed (say) 5.
-
------
-
-## Logic Apps
-
------
-
-## Durable Functions
-
-### #: Chaining example
-
------
-
-### #: Fan-in / fan-out example
-
------
-
-### #: Long-running HTTP request
-
------
-
-## Unit Testing
-
-### #: @todo
 
 -----
