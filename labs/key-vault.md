@@ -1,11 +1,13 @@
 # KEY VAULT
 
-## #: Key Vault (references)
+## #: Access key vault secrets (using key vault references)
 
-[solution](../code-samples/function-app-key-vault/)
+[solution](../code-samples/function-app-keyvault-reference)
 
 -----
 
-## #: Key Vault (configuration provider)
+## #: Access key vault secrets (using key vault configuration provider)
+
+[solution](../code-samples/function-app-keyvault-configuration)
 
 -----
