@@ -12,22 +12,14 @@ namespace function_app_eventgrid_trigger
 {
     public static class EventGridTriggerFunction
     {
-        // [FunctionName("EventGridTriggerFunction")]
-        // public static void Run(
-        //     [EventGridTrigger] EventGridEvent eventGridEvent,
-        //     ILogger log)
-        // {
-        //     log.LogInformation(eventGridEvent.Data.ToString());
-        // }
-
         [FunctionName("EventGridTriggerFunction")]
-        public static async Task Run(
-            [EventGridTrigger] EventGridEvent eventGridEvent,
-            [EventGrid(TopicEndpointUri = "AzureWebJobsTopicEndpointUri", TopicKeySetting = "AzureWebJobsTopicKeySetting")] IAsyncCollector<EventGridEvent> collector,
+        public static void Run(
+            [EventGridTrigger] EventGridEvent ev,
             ILogger log)
         {
-            log.LogInformation(eventGridEvent.Data.ToString());
-            await collector.AddAsync(eventGridEvent);
+            log.LogInformation($"Event Type: {ev.EventType}");
+            log.LogInformation($"Event Subject: {ev.Subject}");
+            log.LogInformation($"Event Data: {ev.Data.ToString()}");
         }
     }
 }
