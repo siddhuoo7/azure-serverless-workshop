@@ -13,7 +13,7 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApp
         [FunctionName("CosmosDBInputFunctionSqlQuery")]
         public static void UseSqlQuery(
             [TimerTrigger("*/30 * * * * *")] TimerInfo myTimer,
-            [CosmosDB("mydb1", "mycontainer1",
+            [CosmosDB("mydb1", "mycollection1",
                 ConnectionStringSetting = "AzureWebJobsCosmosDB",
                 SqlQuery = "select * from c")] // replace later as appropriate
                 IEnumerable<Contact> contacts,

@@ -13,7 +13,7 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApp
         [FunctionName("CosmosDBInputFunctionBindingExpression")]
         public static void UseBindingExpression(
             [BlobTrigger("myblobcontainer1/{blobName}")] string blob, // replace later as appropriate
-            [CosmosDB("mydb1", "mycontainer1",
+            [CosmosDB("mydb1", "mycollection1",
                 ConnectionStringSetting = "AzureWebJobsCosmosDB",
                 SqlQuery = "select * from c where c.lastName = {blobName}")] // replace later as appropriate
                 IEnumerable<Contact> contacts,
