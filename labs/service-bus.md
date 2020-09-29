@@ -1,6 +1,6 @@
 # SERVICE BUS
 
-## #: Posting messages to service bus queue
+## #1: Posting messages to service bus queue
 
 Create a console app which posts messages (text) to a service bus queue.
 
@@ -8,7 +8,7 @@ Create a console app which posts messages (text) to a service bus queue.
 
 -----
 
-## #: Receiving messages from service bus queue
+## #2: Receiving messages from service bus queue
 
 Create a console app which receives/dequeues messages from above service bus queue.
 
@@ -16,7 +16,7 @@ Create a console app which receives/dequeues messages from above service bus que
 
 -----
 
-## #: Publishing to service bus topic
+## #3: Publishing to service bus topic
 
 Create a console app which posts messages (text) to a service bus topic.
 
@@ -24,7 +24,7 @@ Create a console app which posts messages (text) to a service bus topic.
 
 -----
 
-## #: Subscribing to service bus topics
+## #4: Subscribing to service bus topics
 
 Create a console app which receives/dequeues messages from above service bus topic.
 
@@ -32,7 +32,7 @@ Create a console app which receives/dequeues messages from above service bus top
 
 -----
 
-## #: ServiceBus queue-triggered function
+## #5: ServiceBus queue-triggered function
 
 Create and deploy a function which uses a service bus queue trigger for receiving/processing messages.
 
@@ -40,7 +40,7 @@ Create and deploy a function which uses a service bus queue trigger for receivin
 
 -----
 
-## #: ServiceBus topic-triggered function
+## #6: ServiceBus topic-triggered function
 
 Create and deploy a function which uses service bus topic + subscription for receiving messages.
 
@@ -48,7 +48,7 @@ Create and deploy a function which uses service bus topic + subscription for rec
 
 -----
 
-## #: ServiceBus output binding (to queue)
+## #7: ServiceBus output binding (to queue)
 
 Create and deploy a function which writes a message to a service bus queue every 30 seconds.
 
@@ -56,8 +56,16 @@ Create and deploy a function which writes a message to a service bus queue every
 
 -----
 
-## #: [HomeWork] ServiceBus output binding (to topic)
+## #8: [HomeWork] ServiceBus output binding (to topic)
 
 Create and deploy a function which writes a message to a service bus topic every 30 seconds.
+
+-----
+
+## #9: ServiceBus multiple outputs (using IAsyncCollector)
+
+Create and deploy a function which writes multiple messages to a service bus queue every 30 seconds.
+
+[[SOLUTION]](../code-samples/function-app-servicebus-output/ServiceBusQueueMultipleOutputFunction.cs)
 
 -----
