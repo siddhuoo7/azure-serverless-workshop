@@ -14,11 +14,6 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApps
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
-        //     builder.Services.AddHttpClient();
-
-        //     // builder.Services.AddSingleton<IMyService>((s) => {
-        //     //     return new MyService();
-        //     // });
         }
 
         public override void ConfigureAppConfiguration(IFunctionsConfigurationBuilder builder)
@@ -31,7 +26,7 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApps
 
             builder.ConfigurationBuilder
                 .AddAzureKeyVault(
-                    "https://mithunkv12345.vault.azure.net/", // replace later as needed
+                    "@replace-with-key-vault-uri", // replace later as needed
                     keyVaultClient,
                     new DefaultKeyVaultSecretManager());
         }
