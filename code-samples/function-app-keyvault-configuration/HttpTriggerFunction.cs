@@ -25,7 +25,7 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApps
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
             ILogger log)
         {
-            var secretName = "@replace-with-app-setting"; // replace later as needed
+            var secretName = "@replace-with-kv-secret-name"; // replace later as needed
             var secretValue = this._configuration[secretName];
 
             log.LogInformation($"The value of the key vault secret `{secretName}` is `{secretValue ?? "undefined"}`");
