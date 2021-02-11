@@ -21,8 +21,9 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApps
             // - The value of the app setting must be of the format: @Microsoft.KeyVault(SecretUri=@replace-with-secret-uri)
             // - If using versionless secret URI, then ensure trailing forward-slash '/' present.
             // - Key Vault references do not work locally (https://github.com/Azure/azure-functions-host/issues/3907).
-            var secretName = "@replace-with-app-setting";
-            var secretValue = Environment.GetEnvironmentVariable(secretName, EnvironmentVariableTarget.Process);
+            var appSettingName = "@replace-with-app-setting-name";
+            var secretName = "@replace-with-kv-secret-name";
+            var secretValue = Environment.GetEnvironmentVariable(appSettingName, EnvironmentVariableTarget.Process);
 
             log.LogInformation($"The value of the key vault secret `{secretName}` is `{secretValue ?? "undefined"}`");
             return new OkObjectResult(secretValue);
