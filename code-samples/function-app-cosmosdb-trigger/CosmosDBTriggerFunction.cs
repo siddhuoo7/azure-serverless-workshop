@@ -11,7 +11,7 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApp
     public static class CosmosDBTriggerFunction
     {
         [FunctionName("CosmosDBTriggerFunction")]
-        public static void Run([CosmosDBTrigger("mydb1", "mycollection1",
+        public static void Run([CosmosDBTrigger("contactsdb", "contactscontainer",
             ConnectionStringSetting = "AzureWebJobsCosmosDB",
             CreateLeaseCollectionIfNotExists = true)]
             IReadOnlyList<Document> documents,

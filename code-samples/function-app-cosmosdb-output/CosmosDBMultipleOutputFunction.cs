@@ -13,7 +13,7 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApp
         [FunctionName("CosmosDBMultipleOutputFunction")]
         public async static Task UseMultipleOutputs(
             [TimerTrigger("*/30 * * * * *")] TimerInfo myTimer,
-            [CosmosDB("mydb1", "mycollection1", // replace later as appropriate
+            [CosmosDB("contactsdb", "contactscontainer", // replace later as appropriate
                 ConnectionStringSetting = "AzureWebJobsCosmosDB")]
                 IAsyncCollector<Contact> contactsToWrite,
             ILogger log)

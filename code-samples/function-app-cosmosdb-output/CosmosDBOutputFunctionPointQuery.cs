@@ -12,7 +12,7 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApp
         [FunctionName("CosmosDBOutputFunction")]
         public static void UsePointQuery(
             [TimerTrigger("*/30 * * * * *")] TimerInfo myTimer,
-            [CosmosDB("mydb1", "mycollection1", // replace later as appropriate
+            [CosmosDB("contactsdb", "contactscontainer", // replace later as appropriate
                 ConnectionStringSetting = "AzureWebJobsCosmosDB",
                 PartitionKey = "12345", // replace later as appropriate
                 Id= "12345")] // replace later as appropriate
