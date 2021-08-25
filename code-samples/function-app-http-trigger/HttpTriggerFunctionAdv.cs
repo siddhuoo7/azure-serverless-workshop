@@ -33,7 +33,7 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApps
     {
         [FunctionName("HttpTriggerFunctionAdv")]
         public static ActionResult Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] WeatherRequest request,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] WeatherRequest request,
             ILogger log)
         {
             log.LogInformation($"C# HTTP trigger function received a request: {JsonConvert.SerializeObject(request)}");

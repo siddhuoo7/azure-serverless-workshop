@@ -14,7 +14,7 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApps
     {
         [FunctionName("HttpTriggerBindingExpressionFunction")]
         public static IActionResult Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = "apiversion/{versionNum}")] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "apiversion/{versionNum}")] HttpRequest req,
             string versionNum,
             ILogger log)
         {
