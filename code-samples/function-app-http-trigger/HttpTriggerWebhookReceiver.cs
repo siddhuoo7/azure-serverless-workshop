@@ -13,11 +13,11 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApps
     public static class HttpTriggerWebhookReceiver
     {
         [FunctionName("HttpTriggerWebhookReceiver")]
-        public static IActionResult Run(
+        public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
-            log.LogInformation($"C# HTTP trigger function received a request: {req.Body}");
+            log.LogInformation($"C# HTTP trigger function received a request: {await req.ReadAsStringAsync()}");
 
             return new OkResult();
         }
