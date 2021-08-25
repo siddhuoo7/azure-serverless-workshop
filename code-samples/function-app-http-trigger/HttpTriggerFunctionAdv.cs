@@ -13,20 +13,20 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApps
 {
     public class WeatherRequest
     {
-        public string City;
+        public string City { get; set; }
     }
 
     public class DailyWeather
     {
-        public DateTime Date;
-        public double celciusHigh;
-        public double celciusLow;
+        public DateTime Date { get; set; }
+        public double celciusHigh { get; set; }
+        public double celciusLow { get; set; }
     }
 
     public class WeatherResponse
     {
-        public string City;
-        public IEnumerable<DailyWeather> DailyReport;
+        public string City { get; set; }
+        public IEnumerable<DailyWeather> DailyReport { get; set; }
     }
 
     public static class HttpTriggerFunctionAdv
