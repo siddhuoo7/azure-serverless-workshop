@@ -11,4 +11,16 @@
     <PackageReference Include="Azure.Storage.common" Version="12.8.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="sample.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="sample.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="sample.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
