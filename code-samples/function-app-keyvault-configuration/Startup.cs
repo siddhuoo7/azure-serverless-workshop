@@ -1,10 +1,8 @@
-using System.IO;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Azure.KeyVault;
 using Microsoft.Azure.Services.AppAuthentication;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.AzureKeyVault;
-using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
 
 [assembly: FunctionsStartup(typeof(AzureFundamentalsWorkshop.CodeSamples.FunctionApps.Startup))]
 

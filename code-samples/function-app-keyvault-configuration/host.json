@@ -6,6 +6,9 @@
             "samplingSettings": {
                 "isEnabled": true
             }
+        },
+        "logLevel": {
+            "AzureFundamentalsWorkshop.CodeSamples.FunctionApps.HttpTriggerFunction": "Information"
         }
     }
 }
