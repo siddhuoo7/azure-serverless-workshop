@@ -1,10 +1,4 @@
-using System;
-using System.Collections.Generic;
-using Microsoft.Azure.Documents;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Host;
-using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApp
 {
@@ -14,7 +8,7 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApp
 
         public string LastName { get; set; }
 
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public string Id { get; set; }
     }
 }

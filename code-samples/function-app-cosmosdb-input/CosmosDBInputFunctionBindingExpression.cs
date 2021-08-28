@@ -1,10 +1,8 @@
-using System;
 using System.Collections.Generic;
-using Microsoft.Azure.Documents;
+using System.Linq;
+using System.Text.Json;
 using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 
 namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApp
 {
@@ -12,16 +10,20 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApp
     {
         [FunctionName("CosmosDBInputFunctionBindingExpression")]
         public static void UseBindingExpression(
-            [BlobTrigger("myblobcontainer1/{blobName}")] string blob, // replace later as appropriate
+            [BlobTrigger("mycontainer1/{blobName}")] string blob, // replace later as appropriate
             [CosmosDB("contactsdb", "contactscontainer",
                 ConnectionStringSetting = "AzureWebJobsCosmosDB",
                 SqlQuery = "select * from c where c.lastName = {blobName}")] // replace later as appropriate
                 IEnumerable<Contact> contacts,
+            string blobName,
             ILogger log)
         {
+            log.LogInformation($"blob name: {blobName}");
+            log.LogInformation($"found {contacts.Count()} documents");
+
             foreach (var contact in contacts)
             {
-                log.LogInformation($"document: {JsonConvert.SerializeObject(contact)}");
+                log.LogInformation($"document: {JsonSerializer.Serialize<Contact>(contact)}");
             }
         }
     }

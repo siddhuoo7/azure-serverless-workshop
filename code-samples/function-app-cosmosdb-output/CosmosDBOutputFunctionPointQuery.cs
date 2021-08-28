@@ -9,7 +9,7 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApp
 {
     public static class CosmosDBOutputFunctionPointQuery
     {
-        [FunctionName("CosmosDBOutputFunction")]
+        [FunctionName("CosmosDBOutputFunctionPointQuery")]
         public static void UsePointQuery(
             [TimerTrigger("*/30 * * * * *")] TimerInfo myTimer,
             [CosmosDB("contactsdb", "contactscontainer", // replace later as appropriate

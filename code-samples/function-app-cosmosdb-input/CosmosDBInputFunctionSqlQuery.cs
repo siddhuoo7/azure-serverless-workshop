@@ -1,10 +1,7 @@
-using System;
 using System.Collections.Generic;
-using Microsoft.Azure.Documents;
+using System.Text.Json;
 using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 
 namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApp
 {
@@ -21,7 +18,7 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApp
         {
             foreach (var contact in contacts)
             {
-                log.LogInformation($"document: {JsonConvert.SerializeObject(contact)}");
+                log.LogInformation($"document: {JsonSerializer.Serialize<Contact>(contact)}");
             }
         }
     }
