@@ -5,7 +5,7 @@
   * Log into Azure CLI with your Azure credentials: `az login`
   * If your organization has MFA enabled, then you'll need to log into the Azure CLI as follows: `az login --tenant <your-tenant-id>`
   * Set the default azure subscription to use: `az account set -s <your-subscription-id>`
-* Install .NET Core 3.1 SDK ([instructions](https://dotnet.microsoft.com/download/dotnet-core/3.1))
+* Install .NET Core 6 SDK ([instructions](https://dotnet.microsoft.com/download/dotnet/6.0))
 * Install VSCode ([download](https://code.visualstudio.com/)) or Visual Studio ([download](https://visualstudio.microsoft.com/))
 * If you're using VSCode, please install the following VSCode Extensions as well:
   * CSharp: [download link](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) | `code --install-extension ms-dotnettools.csharp`

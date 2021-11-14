@@ -35,7 +35,7 @@
 
 * Create an Azure function app (linux) using steps in lab above
 
-* Create a .Net Core 3.1 Timer-triggered function as follows
+* Create a .Net 6 Timer-triggered function as follows
 
     ```bash
     mkdir <your-app-name> && cd <your-app-name>
