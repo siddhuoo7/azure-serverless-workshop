@@ -5,5 +5,8 @@
     "debug.internalConsoleOptions": "neverOpen",
     "azureFunctions.preDeployTask": "publish",
     "rest-client.enableTelemetry": false,
-    "dotnetAcquisitionExtension.enableTelemetry": false
+    "dotnetAcquisitionExtension.enableTelemetry": false,
+    "cSpell.words": [
+        "mithunshanbhag"
+    ]
 }
