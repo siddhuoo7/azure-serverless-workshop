@@ -1,7 +1,9 @@
 {
     "azureFunctions.deploySubpath": "code-samples/function-app-cosmosdb-output/bin/Release/netcoreapp3.1/publish",
     "azureFunctions.projectLanguage": "C#",
-    "azureFunctions.projectRuntime": "~3",
+    "azureFunctions.projectRuntime": "~4",
     "debug.internalConsoleOptions": "neverOpen",
-    "azureFunctions.preDeployTask": "publish"
+    "azureFunctions.preDeployTask": "publish",
+    "rest-client.enableTelemetry": false,
+    "dotnetAcquisitionExtension.enableTelemetry": false
 }
