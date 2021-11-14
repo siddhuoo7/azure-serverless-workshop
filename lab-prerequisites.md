@@ -11,7 +11,6 @@
   * CSharp: [download link](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) | `code --install-extension ms-dotnettools.csharp`
   * Azure Account: [download link](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) | `code --install-extension ms-vscode.azure-account`
   * Azure Tools: [download link](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) | `code --install-extension ms-vscode.vscode-node-azure-pack`
-  * SQL Server: [download link](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql) | `code --install-extension ms-mssql.mssql`
   * ARM (Azure Resource Manager) Tools: [download link](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools) | `code --install-extension msazurermtools.azurerm-vscode-tools`
 * Install Azure Storage Explorer: [download link](https://azure.microsoft.com/en-in/features/storage-explorer/)
 * Install Azure Functions Core Tools: [instructions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=linux%2Ccsharp%2Cbash#v2)
