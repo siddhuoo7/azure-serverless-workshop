@@ -9,7 +9,7 @@ namespace AzureFundamentalsWorkshop.CodeSamples.BlobStorage
 {
     public class BlobStorageBasics
     {
-        private readonly string connectionString = "<@replace-with-connection-string>";
+        private readonly string connectionString = "DefaultEndpointsProtocol=https;AccountName=azsrvwkstoragedemo;AccountKey=NqGbqFyzva0Az6UNFxjCcvE0yqzvHF85ZTlQHBjbjr7bDgjMIF6lmGPJl4C3qA8TX90ziuX2bxf7Sr2zVomO5w==;EndpointSuffix=core.windows.net";
         private readonly BlobServiceClient serviceClient;
 
         BlobStorageBasics()
@@ -124,7 +124,7 @@ namespace AzureFundamentalsWorkshop.CodeSamples.BlobStorage
             }
             finally
             {
-                await demo.DeleteContainersAsync();
+                //await demo.DeleteContainersAsync();
             }
         }
     }
