@@ -9,7 +9,7 @@ namespace AzureFundamentalsWorkshop.CodeSamples.ServiceBus
     class Program
     {
         private readonly string connectionString = "@replace-with-connection-string";
-        private readonly string queueName = "@replace-with-queue-name";
+        private readonly string queueName = "myqueue1";
         private readonly IQueueClient queueClient;
 
         Program()

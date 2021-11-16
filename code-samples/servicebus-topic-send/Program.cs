@@ -8,9 +8,9 @@ namespace AzureFundamentalsWorkshop.CodeSamples.ServiceBus
 {
     class Program
     {
-        private readonly int numMessages = 10; // arbitrary value
+        private readonly int numMessages = 5; // arbitrary value
         private readonly string connectionString = "@replace-with-connection-string";
-        private readonly string topicName = "@replace-with-queue-name";
+        private readonly string topicName = "mytopic1";
         private readonly ITopicClient topicClient;
 
         Program()

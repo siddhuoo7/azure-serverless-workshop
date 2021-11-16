@@ -9,8 +9,8 @@ namespace AzureFundamentalsWorkshop.CodeSamples.ServiceBus
     class Program
     {
         private readonly string connectionString = "@replace-with-connection-string";
-        private readonly string topicName = "@replace-with-topic-name";
-        private readonly string subscriptionName = "@replace-with-subscription-name";
+        private readonly string topicName = "mytopic1";
+        private readonly string subscriptionName = "mysubscription1";
         private readonly ISubscriptionClient subscriptionClient;
 
         Program()

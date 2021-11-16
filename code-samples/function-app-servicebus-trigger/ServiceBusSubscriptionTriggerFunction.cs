@@ -9,7 +9,7 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApp
     {
         [FunctionName("ServiceBusSubscriptionTriggerFunction")]
         public static void Run(
-            [ServiceBusTrigger("@replace-with-topic-name", "@replace-with-subscription-name")] string myMessage,
+            [ServiceBusTrigger("mytopic1", "mysubscription1")] string myMessage,
             int deliveryCount, // message metadata
             string messageId, // message metadata
             ILogger log)
