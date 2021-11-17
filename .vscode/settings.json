@@ -10,7 +10,9 @@
         "azurerm",
         "mithunshanbhag",
         "msazurermtools",
+        "mycontainer",
         "mysubscription",
-        "mytopic"
+        "mytopic",
+        "shanbhag"
     ]
 }

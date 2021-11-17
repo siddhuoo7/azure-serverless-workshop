@@ -33,8 +33,7 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApps
             {
                 tasks[i] = context.CallActivityAsync<string>("Reverse", tokens[i]);
             }
-            await Task.WhenAll(tasks);
-            return tasks.Select(t => t.Result).ToArray();
+            return await Task.WhenAll(tasks);
         }
 
         [FunctionName("Reverse")] // activity function
