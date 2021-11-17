@@ -13,7 +13,7 @@ namespace AzureFundamentalsWorkshop.CodeSamples.FunctionApp
             [BlobTrigger("mycontainer1/{blobName}")] string blob, // replace later as appropriate
             [CosmosDB("contactsdb", "contactscontainer",
                 ConnectionStringSetting = "AzureWebJobsCosmosDB",
-                SqlQuery = "select * from c where c.lastName = {blobName}")] // replace later as appropriate
+                SqlQuery = "select * from c where c.LastName = {blobName}")] // replace later as appropriate
                 IEnumerable<Contact> contacts,
             string blobName,
             ILogger log)
